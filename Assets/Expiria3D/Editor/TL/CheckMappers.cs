@@ -1,0 +1,63 @@
+﻿using TriLibCore.Mappers;
+using TriLibCore.Utils;
+using UnityEditor;
+using UnityEngine;
+
+namespace TriLibCore.Editor
+{
+    /// <summary>
+    /// Represents a series of Material Mapper utility methods.
+    /// </summary>
+    public static class CheckMappers
+    {
+        /// <summary>
+        /// Enables a compatible Material Mapper if none is found.
+        /// </summary>
+        public static void EnableCompatibleMaterialMapperIfNeeded()
+        {
+            string materialMapperName;
+            for (var i = 0; i < MaterialMapper.RegisteredMappers.Count; i++)
+            {
+                materialMapperName = MaterialMapper.RegisteredMappers[i];
+                if (TriLibSettings.GetBool(materialMapperName, false))
+                {
+                    return;
+                }
+            }
+            EnableCompatibleMaterialMapper();
+        }
+
+        /// <summary>
+        /// Tries to find the best Material Mapper depending on the Rendering Pipeline.
+        /// </summary>
+        public static void EnableCompatibleMaterialMapper()
+        {
+            var usingMaterialMapper = false;
+            for (var i = 0; i < MaterialMapper.RegisteredMappers.Count; i++)
+            {
+                var materialMapperName = MaterialMapper.RegisteredMappers[i];
+                if (TriLibSettings.GetBool(materialMapperName))
+                {
+                    usingMaterialMapper = true;
+                    break;
+                }
+            }
+            if (!usingMaterialMapper)
+            {
+                var materialMapperName = AssetLoader.GetCompatibleMaterialMapperName();
+                SelectMapper(materialMapperName);
+            }
+        }
+
+        [InitializeOnEnterPlayMode]
+        public static void Initialize()
+        {
+            EnableCompatibleMaterialMapperIfNeeded();
+        }
+
+        public static void SelectMapper(string materialMapper)
+        {
+            TriLibSettings.SetBool(materialMapper, true);
+        }
+    }
+}
