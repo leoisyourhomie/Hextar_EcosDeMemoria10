@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: 1264b27c05a8f674cb92ee0c092c5c04
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder:
+    TransformChangeCheck: 1000
+    UGSSpace.OnCollisionEnter2D_ActionReceiver: -1750
+    UGSSpace.OnCollisionEnter3D_ActionReceiver: -1700
+    UGSSpace.OnCollisionExit2D_ActionReceiver: -1650
+    UGSSpace.OnCollisionExit3D_ActionReceiver: -1600
+    UGSSpace.OnCollisionStay2D_ActionReceiver: -1950
+    UGSSpace.OnCollisionStay3D_ActionReceiver: -1900
+    UGSSpace.OnTriggerEnter2D_ActionReceiver: -1550
+    UGSSpace.OnTriggerEnter3D_ActionReceiver: -1500
+    UGSSpace.OnTriggerExit2D_ActionReceiver: -1450
+    UGSSpace.OnTriggerExit3D_ActionReceiver: -1400
+    UGSSpace.OnTriggerStay2D_ActionReceiver: -1850
+    UGSSpace.OnTriggerStay3D_ActionReceiver: -1800
+    UGSSpace.UGS_Enemy: -550
+    UGSSpace.UGS_Player: -725
+    UGSSpace.UGameStudioGDK.CrossPlatformInputs: -700
+    UGSSpace.UGameStudioGDK.DataSaveManager: -3000
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 0
+  platformData:
+  - first:
+      : Any
+    second:
+      enabled: 0
+      settings:
+        Exclude Android: 0
+        Exclude Editor: 0
+        Exclude Linux64: 0
+        Exclude OSXUniversal: 0
+        Exclude WebGL: 0
+        Exclude Win: 0
+        Exclude Win64: 0
+        Exclude iOS: 0
+  - first:
+      Android: Android
+    second:
+      enabled: 1
+      settings:
+        AndroidSharedLibraryType: Executable
+        CPU: ARMv7
+  - first:
+      Any: 
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+        DefaultValueInitialized: true
+        OS: AnyOS
+  - first:
+      Standalone: Linux64
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: OSXUniversal
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: Win
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: Win64
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      WebGL: WebGL
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  - first:
+      iPhone: iOS
+    second:
+      enabled: 1
+      settings:
+        AddToEmbeddedBinaries: false
+        CPU: AnyCPU
+        CompileFlags: 
+        FrameworkDependencies: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

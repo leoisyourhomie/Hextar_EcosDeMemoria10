@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SavePoint
+  - Ground Tag
+  - Obstacle
+  - CheckPoint
+  - Object
+  - ParkourWall
+  - Coin
+  - Enemy
+  - Mount
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -13,9 +23,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Obstacle
   - 
   - 
   - 
