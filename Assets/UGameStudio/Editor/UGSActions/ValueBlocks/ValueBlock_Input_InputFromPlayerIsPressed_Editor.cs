@@ -1,0 +1,67 @@
+namespace UGSSpace
+{
+    using System.Collections.Generic;
+    using UnityEditor;
+    using UnityEngine;
+    using UnityEngine.InputSystem;
+    using UGSSpace.UGameActions;
+    public class ValueBlock_Input_InputFromPlayerIsPressed_Editor : FunctionsEditor.ValueBlockEditor
+    {
+        public override bool IsThisBlockAssigned => block != null;
+        public override ReactivePropertyInfo[] ReactiveProperties
+        {
+            get
+            {
+                if (block == null || !block.RequiredPlayerInput.IsReactiveOrAnchored)
+                {
+                    return new ReactivePropertyInfo[0];
+                }
+                else
+                {
+                    return new ReactivePropertyInfo[]
+                    {
+                        new ReactivePropertyInfo() { propertyNameSpanish = "PlayerInput", propertyNameEnglish = "PlayerInput" }
+                    };
+                }
+            }
+        }
+
+        public override int Order => 0;
+
+        public override string NameInBuilderList_Spanish => "Input From Player Is Pressed";
+
+        public override string NameInBuilderList_English => "Input From Player Is Pressed";
+
+        public override string NameInEditor_Spanish => "Input Desde Jugador Es Presionado";
+
+        public override string NameInEditor_English => "Input From Player Is Pressed";
+
+        public override string DescriptionSpanish => "Input From Player Is Pressed";
+
+        public override string DescriptionEnglish => "Input From Player Is Pressed";
+
+        public override FlowBuilderCategory Category => new ValueBlockCategory_Input_InputFromPlayer();
+
+        public override string IconName => "d_EventTrigger Icon";
+
+        ValueBlock_Input_InputFromPlayerIsPressed block;
+        public override void Draw(FlowEditor flowEditor, ActionsReactivity actionsReactivity, ValueBlock _valueBlock, bool disableSelectionForSpecificObjectsInScene, List<IUGameVariable> receivedLocalVariables, bool isThisFieldInsideValueSelectorWindow)
+        {
+            block ??= (ValueBlock_Input_InputFromPlayerIsPressed)_valueBlock;
+
+            EditorGUI.BeginDisabledGroup(Application.isPlaying);
+            {
+
+                ObjectSelectorEditor.DrawField(flowEditor, actionsReactivity, (x) => block.RequiredPlayerInput = x, block.RequiredPlayerInput
+                    , receivedLocalVariables, disableSelectionForSpecificObjectsInScene, isThisFieldInsideValueSelectorWindow);
+
+                EditorGUIUtility.labelWidth = 42;
+
+                block.InputActionRef = EditorGUILayout.ObjectField("Input: ", block.InputActionRef, typeof(InputActionReference), true, GUILayout.Width(160)) as InputActionReference;
+
+                EditorGUIUtility.labelWidth = 0;
+            }
+            EditorGUI.EndDisabledGroup();
+        }
+    }
+}

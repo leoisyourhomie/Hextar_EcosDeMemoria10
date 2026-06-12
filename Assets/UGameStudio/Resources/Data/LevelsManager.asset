@@ -27,9 +27,7 @@ MonoBehaviour:
       levelSceneRef: {fileID: 0}
     - sceneName: 
       levelSceneRef: {fileID: 0}
-  otherGameScenes:
-  - sceneName: 
-    otherGameSceneRef: {fileID: 0}
+  otherGameScenes: []
   isValid: 1
   <InSceneVariables>k__BackingField: []
   addTo: 0
