@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -156,6 +156,10 @@ RectTransform:
   - {fileID: 1474195736}
   - {fileID: 1385560749}
   - {fileID: 534921153}
+  - {fileID: 1435000991}
+  - {fileID: 1178774561}
+  - {fileID: 2036672506}
+  - {fileID: 924015520}
   m_Father: {fileID: 1984512722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -323,6 +327,85 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.24902344}
   m_SizeDelta: {x: 0, y: 0.49805}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &57444636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 57444637}
+  - component: {fileID: 57444639}
+  - component: {fileID: 57444638}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &57444637
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57444636}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1435000991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &57444638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57444636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &57444639
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57444636}
+  m_CullTransparentMesh: 1
 --- !u!1 &88243068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,7 +1229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &277825066
 Transform:
   m_ObjectHideFlags: 0
@@ -1155,8 +1238,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277825065}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.95260334, z: -0, w: 0.30421525}
-  m_LocalPosition: {x: 3.76, y: -0.26, z: -2.03}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.26, z: 0}
   m_LocalScale: {x: 0.76135015, y: 0.76135, z: 0.76135015}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1165,7 +1248,7 @@ Transform:
   - {fileID: 32059665261158107}
   - {fileID: 220900180}
   m_Father: {fileID: 1819517595}
-  m_LocalEulerAnglesHint: {x: 0, y: 144.578, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &278485874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2159,7 +2242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &599028195
 Transform:
   m_ObjectHideFlags: 0
@@ -2168,8 +2251,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599028194}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9703112, z: -0, w: 0.24185987}
-  m_LocalPosition: {x: -2.1181664, y: -0.089999914, z: 0.2809701}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -0.089999914, z: 0.2809701}
   m_LocalScale: {x: 1.4072592, y: 1.4072591, z: 1.4072592}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2178,7 +2261,7 @@ Transform:
   - {fileID: 261750394439860155}
   - {fileID: 1278274876}
   m_Father: {fileID: 1819517595}
-  m_LocalEulerAnglesHint: {x: 0, y: 152.007, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &618475096 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3722816307452943369, guid: b9d3a69c41de9434ebd5e652f8d16154, type: 3}
@@ -2260,6 +2343,85 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   orientation: 0
+--- !u!1 &671566367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 671566368}
+  - component: {fileID: 671566370}
+  - component: {fileID: 671566369}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &671566368
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671566367}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 924015520}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &671566369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671566367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &671566370
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671566367}
+  m_CullTransparentMesh: 1
 --- !u!1001 &696455263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4287,6 +4449,313 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b9d3a69c41de9434ebd5e652f8d16154, type: 3}
   m_PrefabInstance: {fileID: 466297286}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &924015519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924015520}
+  - component: {fileID: 924015523}
+  - component: {fileID: 924015522}
+  - component: {fileID: 924015521}
+  - component: {fileID: 924015524}
+  m_Layer: 5
+  m_Name: Dioram4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &924015520
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924015519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.243944, y: 6.243944, z: 6.243944}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 671566368}
+  m_Father: {fileID: 5238560}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 127, y: 807}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &924015521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924015519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 924015522}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &924015522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924015519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &924015523
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924015519}
+  m_CullTransparentMesh: 1
+--- !u!114 &924015524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924015519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a16e5f914cc40dd4b8eafa3b7232986b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 285640305
+  flowName: ShowDioram4
+  descriptionInEnglish: This component allows you to create your own component with
+    it's actions.
+  descriptionInSpanish: Este componente te permite crear tus propios componentes
+    con sus acciones.
+  componentIcon: {fileID: 0}
+  <Actions>k__BackingField:
+  - rid: 7451688563670777933
+  childActionsPositionForMap: {x: 0, y: 0}
+  <WhenToStop>k__BackingField: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7451688563670777933
+      type: {class: UGSAction_Event_OnEnable, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 1564674925
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <PositionInMap>k__BackingField: {x: 5000, y: 5000}
+        <UGSActionType>k__BackingField: 1
+        <Actions>k__BackingField:
+        - rid: 7451688563670777934
+        childActionsPositionForMap: {x: 0, y: 0}
+    - rid: 7451688563670777934
+      type: {class: UGSAction_Condition, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 1287529388
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <ConditionsWithUGSActions>k__BackingField:
+        - <Actions>k__BackingField:
+          - rid: 7451688563670777946
+          - rid: 7451688563670777939
+          - rid: 7451688563670777942
+          - rid: 7451688563670777944
+          childActionsPositionForMap: {x: 0, y: 0}
+          <Condition>k__BackingField:
+            <ConditionRef>k__BackingField:
+              <ComparisonGroups>k__BackingField:
+              - <Comparisons>k__BackingField:
+                - <LogicOperatorType>k__BackingField: 0
+                  elementToCompare_A:
+                    rid: 7451688563670777937
+                  <ComparisonType>k__BackingField: 0
+                  elementToCompare_B:
+                    rid: 7451688563670777936
+                <LogicOperatorType>k__BackingField: 0
+        <ActionsForFinalElse>k__BackingField: []
+        childActionsPositionForMap: {x: 0, y: 0}
+        <RunActionsEachTimeABlockReacts>k__BackingField: 1
+    - rid: 7451688563670777936
+      type: {class: ValueBlock_True, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1070890100
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+    - rid: 7451688563670777937
+      type: {class: ValueBlock_Button_IsPressing, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1642639392
+        <ReactAs>k__BackingField: 0
+        reactiveBehaviorIsLockedByDefault: 0
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777938
+    - rid: 7451688563670777938
+      type: {class: Select_ThisObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 573426498
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.UI.Button, UnityEngine.UI, Version=1.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 924015519}
+        m_ValueType: 8
+        <ThisObject>k__BackingField: {fileID: 924015521}
+    - rid: 7451688563670777939
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 2125178309
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777941
+    - rid: 7451688563670777941
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1799760106
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 924015519}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 1652341513}
+    - rid: 7451688563670777942
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 1268680455
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777943
+    - rid: 7451688563670777943
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1799760106
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 924015519}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 1775286756}
+    - rid: 7451688563670777944
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -1132690921
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777945
+    - rid: 7451688563670777945
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1799760106
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 924015519}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 277825065}
+    - rid: 7451688563670777946
+      type: {class: UGSAction_EnableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 1352993115
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777948
+    - rid: 7451688563670777948
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1519268641
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 924015519}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 599028194}
 --- !u!1 &926898897
 GameObject:
   m_ObjectHideFlags: 0
@@ -5181,6 +5650,313 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1178774560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178774561}
+  - component: {fileID: 1178774564}
+  - component: {fileID: 1178774563}
+  - component: {fileID: 1178774562}
+  - component: {fileID: 1178774565}
+  m_Layer: 5
+  m_Name: Dioram2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1178774561
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178774560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.243944, y: 6.243944, z: 6.243944}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1797315961}
+  m_Father: {fileID: 5238560}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 127, y: 497}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1178774562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178774560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1178774563}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1178774563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178774560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1178774564
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178774560}
+  m_CullTransparentMesh: 1
+--- !u!114 &1178774565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178774560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a16e5f914cc40dd4b8eafa3b7232986b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 613232352
+  flowName: ShowDioram2
+  descriptionInEnglish: This component allows you to create your own component with
+    it's actions.
+  descriptionInSpanish: Este componente te permite crear tus propios componentes
+    con sus acciones.
+  componentIcon: {fileID: 0}
+  <Actions>k__BackingField:
+  - rid: 7451688563670777901
+  childActionsPositionForMap: {x: 0, y: 0}
+  <WhenToStop>k__BackingField: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7451688563670777901
+      type: {class: UGSAction_Event_OnEnable, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -1919056819
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <PositionInMap>k__BackingField: {x: 5000, y: 5000}
+        <UGSActionType>k__BackingField: 1
+        <Actions>k__BackingField:
+        - rid: 7451688563670777902
+        childActionsPositionForMap: {x: 0, y: 0}
+    - rid: 7451688563670777902
+      type: {class: UGSAction_Condition, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -848873344
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <ConditionsWithUGSActions>k__BackingField:
+        - <Actions>k__BackingField:
+          - rid: 7451688563670777914
+          - rid: 7451688563670777907
+          - rid: 7451688563670777910
+          - rid: 7451688563670777912
+          childActionsPositionForMap: {x: 0, y: 0}
+          <Condition>k__BackingField:
+            <ConditionRef>k__BackingField:
+              <ComparisonGroups>k__BackingField:
+              - <Comparisons>k__BackingField:
+                - <LogicOperatorType>k__BackingField: 0
+                  elementToCompare_A:
+                    rid: 7451688563670777905
+                  <ComparisonType>k__BackingField: 0
+                  elementToCompare_B:
+                    rid: 7451688563670777904
+                <LogicOperatorType>k__BackingField: 0
+        <ActionsForFinalElse>k__BackingField: []
+        childActionsPositionForMap: {x: 0, y: 0}
+        <RunActionsEachTimeABlockReacts>k__BackingField: 1
+    - rid: 7451688563670777904
+      type: {class: ValueBlock_True, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 2089010531
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+    - rid: 7451688563670777905
+      type: {class: ValueBlock_Button_IsPressing, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 252938827
+        <ReactAs>k__BackingField: 0
+        reactiveBehaviorIsLockedByDefault: 0
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777906
+    - rid: 7451688563670777906
+      type: {class: Select_ThisObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -541452667
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.UI.Button, UnityEngine.UI, Version=1.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1178774560}
+        m_ValueType: 8
+        <ThisObject>k__BackingField: {fileID: 1178774562}
+    - rid: 7451688563670777907
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -205203851
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777909
+    - rid: 7451688563670777909
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 955750146
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1178774560}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 1652341513}
+    - rid: 7451688563670777910
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 478447602
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777911
+    - rid: 7451688563670777911
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 955750146
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1178774560}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 599028194}
+    - rid: 7451688563670777912
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -546869423
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777913
+    - rid: 7451688563670777913
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 955750146
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1178774560}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 277825065}
+    - rid: 7451688563670777914
+      type: {class: UGSAction_EnableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 2022489617
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777916
+    - rid: 7451688563670777916
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1249087118
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1178774560}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 1775286756}
 --- !u!1 &1225698670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6133,6 +6909,313 @@ Transform:
   - {fileID: 697444818}
   m_Father: {fileID: 258049095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1435000990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435000991}
+  - component: {fileID: 1435000994}
+  - component: {fileID: 1435000993}
+  - component: {fileID: 1435000992}
+  - component: {fileID: 1435000995}
+  m_Layer: 5
+  m_Name: Dioram1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1435000991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435000990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.243944, y: 6.243944, z: 6.243944}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 57444637}
+  m_Father: {fileID: 5238560}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 127, y: 342}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1435000992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435000990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1435000993}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1435000993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435000990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1435000994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435000990}
+  m_CullTransparentMesh: 1
+--- !u!114 &1435000995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435000990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a16e5f914cc40dd4b8eafa3b7232986b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 1568228359
+  flowName: ShowDioram1
+  descriptionInEnglish: This component allows you to create your own component with
+    it's actions.
+  descriptionInSpanish: Este componente te permite crear tus propios componentes
+    con sus acciones.
+  componentIcon: {fileID: 0}
+  <Actions>k__BackingField:
+  - rid: 7451688563670777856
+  childActionsPositionForMap: {x: 0, y: 0}
+  <WhenToStop>k__BackingField: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7451688563670777856
+      type: {class: UGSAction_Event_OnEnable, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -1790101809
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <PositionInMap>k__BackingField: {x: 5000, y: 5000}
+        <UGSActionType>k__BackingField: 1
+        <Actions>k__BackingField:
+        - rid: 7451688563670777857
+        childActionsPositionForMap: {x: 0, y: 0}
+    - rid: 7451688563670777857
+      type: {class: UGSAction_Condition, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 1002074980
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <ConditionsWithUGSActions>k__BackingField:
+        - <Actions>k__BackingField:
+          - rid: 7451688563670777886
+          - rid: 7451688563670777871
+          - rid: 7451688563670777874
+          - rid: 7451688563670777876
+          childActionsPositionForMap: {x: 0, y: 0}
+          <Condition>k__BackingField:
+            <ConditionRef>k__BackingField:
+              <ComparisonGroups>k__BackingField:
+              - <Comparisons>k__BackingField:
+                - <LogicOperatorType>k__BackingField: 0
+                  elementToCompare_A:
+                    rid: 7451688563670777862
+                  <ComparisonType>k__BackingField: 0
+                  elementToCompare_B:
+                    rid: 7451688563670777859
+                <LogicOperatorType>k__BackingField: 0
+        <ActionsForFinalElse>k__BackingField: []
+        childActionsPositionForMap: {x: 0, y: 0}
+        <RunActionsEachTimeABlockReacts>k__BackingField: 1
+    - rid: 7451688563670777859
+      type: {class: ValueBlock_True, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1699316486
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+    - rid: 7451688563670777862
+      type: {class: ValueBlock_Button_IsPressing, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1171652100
+        <ReactAs>k__BackingField: 0
+        reactiveBehaviorIsLockedByDefault: 0
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777863
+    - rid: 7451688563670777863
+      type: {class: Select_ThisObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1475050222
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.UI.Button, UnityEngine.UI, Version=1.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1435000990}
+        m_ValueType: 8
+        <ThisObject>k__BackingField: {fileID: 1435000992}
+    - rid: 7451688563670777871
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 1953794079
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777873
+    - rid: 7451688563670777873
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 837933824
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1435000990}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 599028194}
+    - rid: 7451688563670777874
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -1658978662
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777875
+    - rid: 7451688563670777875
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 837933824
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1435000990}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 1775286756}
+    - rid: 7451688563670777876
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 3345730
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777877
+    - rid: 7451688563670777877
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 837933824
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1435000990}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 277825065}
+    - rid: 7451688563670777886
+      type: {class: UGSAction_EnableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 967701958
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777888
+    - rid: 7451688563670777888
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1670449490
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 1435000990}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 1652341513}
 --- !u!1 &1443370073
 GameObject:
   m_ObjectHideFlags: 0
@@ -7105,8 +8188,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652341513}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.96185267, z: -0, w: -0.27356794}
-  m_LocalPosition: {x: 1.6098195, y: 0.77, z: -0.3740301}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.77, z: -0.3740301}
   m_LocalScale: {x: 0.12728032, y: 0.12728032, z: 0.12728032}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7115,7 +8198,7 @@ Transform:
   - {fileID: 6967417239402005110}
   - {fileID: 1329660499}
   m_Father: {fileID: 1819517595}
-  m_LocalEulerAnglesHint: {x: 0, y: -148.247, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1656577692
 GameObject:
   m_ObjectHideFlags: 1
@@ -7610,6 +8693,85 @@ MonoBehaviour:
   confidenceIcon: {fileID: 1153324794}
   cam: {fileID: 333885513640754115}
   trackObject: {fileID: 88243069}
+--- !u!1 &1725717337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725717338}
+  - component: {fileID: 1725717340}
+  - component: {fileID: 1725717339}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1725717338
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725717337}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2036672506}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1725717339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725717337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1725717340
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725717337}
+  m_CullTransparentMesh: 1
 --- !u!1 &1731318824
 GameObject:
   m_ObjectHideFlags: 0
@@ -7871,7 +9033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1775286757
 Transform:
   m_ObjectHideFlags: 0
@@ -7880,8 +9042,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775286756}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.8459976, z: -0, w: 0.53318673}
-  m_LocalPosition: {x: -4.49, y: 0.32999992, z: -2.12}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.32999992, z: 0}
   m_LocalScale: {x: 0.22958605, y: 0.22958605, z: 0.22958605}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7890,7 +9052,7 @@ Transform:
   - {fileID: 2017969720}
   - {fileID: 1677655446}
   m_Father: {fileID: 1819517595}
-  m_LocalEulerAnglesHint: {x: 0, y: 115.558, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1791982529
 GameObject:
   m_ObjectHideFlags: 0
@@ -7975,6 +9137,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1677655446}
   m_LocalEulerAnglesHint: {x: 0, y: 4.571, z: 0}
+--- !u!1 &1797315960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797315961}
+  - component: {fileID: 1797315963}
+  - component: {fileID: 1797315962}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1797315961
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797315960}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1178774561}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1797315962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797315960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1797315963
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797315960}
+  m_CullTransparentMesh: 1
 --- !u!1 &1800296628
 GameObject:
   m_ObjectHideFlags: 0
@@ -17200,6 +18441,313 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031700362}
   m_CullTransparentMesh: 1
+--- !u!1 &2036672505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036672506}
+  - component: {fileID: 2036672509}
+  - component: {fileID: 2036672508}
+  - component: {fileID: 2036672507}
+  - component: {fileID: 2036672510}
+  m_Layer: 5
+  m_Name: Dioram3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2036672506
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036672505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.243944, y: 6.243944, z: 6.243944}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1725717338}
+  m_Father: {fileID: 5238560}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 127, y: 652}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2036672507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036672505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2036672508}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2036672508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036672505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2036672509
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036672505}
+  m_CullTransparentMesh: 1
+--- !u!114 &2036672510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036672505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a16e5f914cc40dd4b8eafa3b7232986b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: -236421253
+  flowName: ShowDioram3
+  descriptionInEnglish: This component allows you to create your own component with
+    it's actions.
+  descriptionInSpanish: Este componente te permite crear tus propios componentes
+    con sus acciones.
+  componentIcon: {fileID: 0}
+  <Actions>k__BackingField:
+  - rid: 7451688563670777917
+  childActionsPositionForMap: {x: 0, y: 0}
+  <WhenToStop>k__BackingField: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7451688563670777917
+      type: {class: UGSAction_Event_OnEnable, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 66581969
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <PositionInMap>k__BackingField: {x: 5000, y: 5000}
+        <UGSActionType>k__BackingField: 1
+        <Actions>k__BackingField:
+        - rid: 7451688563670777918
+        childActionsPositionForMap: {x: 0, y: 0}
+    - rid: 7451688563670777918
+      type: {class: UGSAction_Condition, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 363883538
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <ConditionsWithUGSActions>k__BackingField:
+        - <Actions>k__BackingField:
+          - rid: 7451688563670777930
+          - rid: 7451688563670777923
+          - rid: 7451688563670777926
+          - rid: 7451688563670777928
+          childActionsPositionForMap: {x: 0, y: 0}
+          <Condition>k__BackingField:
+            <ConditionRef>k__BackingField:
+              <ComparisonGroups>k__BackingField:
+              - <Comparisons>k__BackingField:
+                - <LogicOperatorType>k__BackingField: 0
+                  elementToCompare_A:
+                    rid: 7451688563670777921
+                  <ComparisonType>k__BackingField: 0
+                  elementToCompare_B:
+                    rid: 7451688563670777920
+                <LogicOperatorType>k__BackingField: 0
+        <ActionsForFinalElse>k__BackingField: []
+        childActionsPositionForMap: {x: 0, y: 0}
+        <RunActionsEachTimeABlockReacts>k__BackingField: 1
+    - rid: 7451688563670777920
+      type: {class: ValueBlock_True, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -2130311025
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+    - rid: 7451688563670777921
+      type: {class: ValueBlock_Button_IsPressing, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1951991820
+        <ReactAs>k__BackingField: 0
+        reactiveBehaviorIsLockedByDefault: 0
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777922
+    - rid: 7451688563670777922
+      type: {class: Select_ThisObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1787605118
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.UI.Button, UnityEngine.UI, Version=1.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 2036672505}
+        m_ValueType: 8
+        <ThisObject>k__BackingField: {fileID: 2036672507}
+    - rid: 7451688563670777923
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 918410061
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777925
+    - rid: 7451688563670777925
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1906410026
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 2036672505}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 1652341513}
+    - rid: 7451688563670777926
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -81473460
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777927
+    - rid: 7451688563670777927
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1906410026
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 2036672505}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 1775286756}
+    - rid: 7451688563670777928
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 2127292090
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777929
+    - rid: 7451688563670777929
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1906410026
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 2036672505}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 599028194}
+    - rid: 7451688563670777930
+      type: {class: UGSAction_EnableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -1117577026
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688563670777932
+    - rid: 7451688563670777932
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 556884425
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 2036672505}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 277825065}
 --- !u!1 &2057590336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1249208497433440154, guid: 85a01342c0d5ceb41b338d56b7f5ded4, type: 3}
