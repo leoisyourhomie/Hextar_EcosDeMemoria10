@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5361565089151875090}
   - component: {fileID: 7395780058339264003}
+  - component: {fileID: 1768195584574099466}
+  - component: {fileID: 7098484266931235790}
   m_Layer: 0
   m_Name: Asset 10
   m_TagString: Untagged
@@ -84,6 +86,166 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1768195584574099466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264852660424971757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7098484266931235790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264852660424971757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a16e5f914cc40dd4b8eafa3b7232986b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 687472132
+  flowName: HideContent
+  descriptionInEnglish: This component allows you to create your own component with
+    it's actions.
+  descriptionInSpanish: Este componente te permite crear tus propios componentes
+    con sus acciones.
+  componentIcon: {fileID: 0}
+  <Actions>k__BackingField:
+  - rid: 7451688632313446411
+  childActionsPositionForMap: {x: 0, y: 0}
+  <WhenToStop>k__BackingField: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7451688632313446411
+      type: {class: UGSAction_Event_OnEnable, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 1865797390
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <PositionInMap>k__BackingField: {x: 5000, y: 5000}
+        <UGSActionType>k__BackingField: 1
+        <Actions>k__BackingField:
+        - rid: 7451688632313446412
+        childActionsPositionForMap: {x: 0, y: 0}
+    - rid: 7451688632313446412
+      type: {class: UGSAction_Condition, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: 1693388823
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 1
+        <ConditionsWithUGSActions>k__BackingField:
+        - <Actions>k__BackingField:
+          - rid: 7451688632313446417
+          childActionsPositionForMap: {x: 0, y: 0}
+          <Condition>k__BackingField:
+            <ConditionRef>k__BackingField:
+              <ComparisonGroups>k__BackingField:
+              - <Comparisons>k__BackingField:
+                - <LogicOperatorType>k__BackingField: 0
+                  elementToCompare_A:
+                    rid: 7451688632313446415
+                  <ComparisonType>k__BackingField: 0
+                  elementToCompare_B:
+                    rid: 7451688632313446414
+                <LogicOperatorType>k__BackingField: 0
+        <ActionsForFinalElse>k__BackingField: []
+        childActionsPositionForMap: {x: 0, y: 0}
+        <RunActionsEachTimeABlockReacts>k__BackingField: 1
+    - rid: 7451688632313446414
+      type: {class: ValueBlock_True, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 1300073699
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+    - rid: 7451688632313446415
+      type: {class: ValueBlock_Button_IsPressing, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 2076635562
+        <ReactAs>k__BackingField: 0
+        reactiveBehaviorIsLockedByDefault: 0
+        <HasReactiveProperties>k__BackingField: 0
+        m_OperationType: 5
+        m_ValueType: 6
+        <RequiredObject>k__BackingField:
+          rid: 7451688632313446416
+    - rid: 7451688632313446416
+      type: {class: Select_ThisObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: 635160750
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.UI.Button, UnityEngine.UI, Version=1.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 3264852660424971757}
+        m_ValueType: 8
+        <ThisObject>k__BackingField: {fileID: 1768195584574099466}
+    - rid: 7451688632313446417
+      type: {class: UGSAction_DisableGameObject, ns: UGSSpace.UGameActions, asm: UGS_T}
+      data:
+        _id: -1772799131
+        <ShowContentInEditor>k__BackingField: 1
+        <HasReactiveProperties>k__BackingField: 0
+        <RequiredObject>k__BackingField:
+          rid: 7451688632313446419
+    - rid: 7451688632313446419
+      type: {class: UGameVariableObject, ns: UGSSpace, asm: UGS_T}
+      data:
+        _id: -1497236540
+        <ReactAs>k__BackingField: 1
+        reactiveBehaviorIsLockedByDefault: 1
+        <HasReactiveProperties>k__BackingField: 0
+        m_NameOfTypeToFind: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        <EnableDebugMode>k__BackingField: 0
+        <GameObjectOwner>k__BackingField: {fileID: 3264852660424971757}
+        m_ValueType: 8
+        <Name>k__BackingField: 
+        <m_Value>k__BackingField: {fileID: 4023614589891098622}
 --- !u!1 &3622748385095135213
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +339,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4539870294141238966}
-  - component: {fileID: 3599730102441130227}
   - component: {fileID: 193227534142173894}
   - component: {fileID: 562862515038913586}
   m_Layer: 0
@@ -186,7 +347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4539870294141238966
 Transform:
   m_ObjectHideFlags: 0
@@ -197,7 +358,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.03861944, y: 0.79255444, z: -1.3773322}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7.8566737, y: 7.8566737, z: 7.8566737}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2804911513818000344}
@@ -205,30 +366,6 @@ Transform:
   - {fileID: 5361565089151875090}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3599730102441130227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4023614589891098622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24f14406ce6cd3f4cbaab09edb7578a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  actionData:
-    rid: 4577743246098169857
-  references:
-    version: 2
-    RefIds:
-    - rid: 4577743246098169857
-      type: {class: ArAction_EnableOrDisableObjects, ns: Expiria3DSpace, asm: Assembly-CSharp}
-      data:
-        objectActions:
-        - targetObject: {fileID: 4023614589891098622}
-          action: 1
 --- !u!65 &193227534142173894
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -269,8 +406,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.2455734, y: 0.31171304, z: 0.1313163}
-  m_Center: {x: -0.122786716, y: -0.34414348, z: -0.026922882}
+  m_Size: {x: 0.8418863, y: 0.33064198, z: 0.15610456}
+  m_Center: {x: 0.064269364, y: -0.35326368, z: -0.014528751}
 --- !u!1 &4501198715867291608
 GameObject:
   m_ObjectHideFlags: 0
