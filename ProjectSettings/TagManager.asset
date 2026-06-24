@@ -14,6 +14,7 @@ TagManager:
   - Enemy
   - Mount
   - Bullet
+  - Interactable
   layers:
   - Default
   - TransparentFX
