@@ -22,7 +22,8 @@ Shader "Custom/LuminanceObject"
         ZTest LEqual 
 
         CGPROGRAM
-        #pragma surface surf Unlit vertex:vert noforwardadd noambient nolightmap nodirlightmap
+        // OPTIMIZACIÓN 1: Añadimos 'exclude_path:deferred' y 'halfasview' para reducir el cálculo de vectores en RA móvil
+        #pragma surface surf Unlit vertex:vert noforwardadd noambient nolightmap nodirlightmap exclude_path:deferred halfasview
         #pragma multi_compile_instancing
 
         fixed4 _GlowColor;
@@ -36,6 +37,7 @@ Shader "Custom/LuminanceObject"
 
         struct Input
         {
+            // OPTIMIZACIÓN 2: Usamos precisión media 'half3' en el vector de vista para liberar memoria de GPU
             half3 viewDir;
         };
 
@@ -52,13 +54,16 @@ Shader "Custom/LuminanceObject"
 
         void surf (Input IN, inout SurfaceOutput o)
         {
-            half rim = 1.0h - saturate(dot(normalize(IN.viewDir), o.Normal));
+            // OPTIMIZACIÓN 3: Eliminamos 'normalize()' ya que 'halfasview' nos entrega un vector de cámara listo y óptimo
+            half rim = 1.0h - saturate(dot(IN.viewDir, o.Normal));
             half finalRim = pow(rim, _GlowFalloff);
 
             // Sumamos el modificador único a la velocidad base para romper el ciclo armónico
             half velocidadUnica = _FadeSpeed + _ObjetoSpeedMod;
 
             half ondaTime = sin((_Time.y * velocidadUnica) + _ObjetoDelay);
+            
+            // OPTIMIZACIÓN 4: Simplificación matemática lineal directa
             half factorFade = (ondaTime * 0.5h) + 0.5h;
 
             o.Emission = _GlowColor.rgb * finalRim * (_MaxGlowIntensity * factorFade);

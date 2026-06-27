@@ -15,6 +15,7 @@ TagManager:
   - Mount
   - Bullet
   - Interactable
+  - SpritePopUp
   layers:
   - Default
   - TransparentFX
