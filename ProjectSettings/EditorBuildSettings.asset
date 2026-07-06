@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HomeScreen.unity
     guid: e0bd044acaef65342b575321fb995530
   - enabled: 1
+    path: Assets/Scenes/3DVisor.unity
+    guid: 4b2a5709e89ea264c821371a4d6b1365
+  - enabled: 1
     path: Assets/MuseoMemoria.unity
     guid: 3f0fc19dd6ec09749897b739f8d3d774
   m_configObjects: {}
